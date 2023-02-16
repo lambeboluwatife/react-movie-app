@@ -13,7 +13,7 @@ const Movie = ({ movie }) => {
     <div className="movie">
         <img src={IMG_PATH + movie.poster_path} alt={movie.title} />
         <div className="movie-info">
-            <h3>{movie.title}</h3>
+            <h3>{movie.title || movie.name}</h3>
             <span className={getClassByRate(movie.vote_average)}>{movie.vote_average}</span>
             <div className="overview">
                 <h3>Overview</h3>

@@ -26,9 +26,21 @@ const App = () => {
 
     return data.results;
   };
+
+  async function getMovies(url) {
+    const res = await fetch(url);
+    const data = await res.json();
+
+    setMovies(data.results);
+  }
+
+  const getData = (data) => {
+    getMovies(SEARCH_API + data);
+  };
+
   return (
     <div className="container">
-      <Header />
+      <Header onSubmit={getData} />
       <Movies movies={movies} />
     </div>
   );
