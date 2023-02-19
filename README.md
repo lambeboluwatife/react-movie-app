@@ -1,8 +1,11 @@
 ## Movie App
 
 ## Description
-A simple web application that allows users to search for and view information about movies.\
-This project was built with ReactJS and TMDB API
+A simple web application that allows users to search for and view information about movies.
+
+This project was built with ReactJS and TMDB API.
+
+It gives you the latest trending movies and tv-shows and has the option to search for any movie or tv-shows and one can filter the type of genre you want.
 
 In the project directory, you can run:
 
