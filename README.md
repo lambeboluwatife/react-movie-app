@@ -14,5 +14,5 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Visit (https://movie-app-v9.netlify.app/) to view in browser.
+Visit [https://movie-app-v9.netlify.app/](https://movie-app-v9.netlify.app/) to view in browser.
 
