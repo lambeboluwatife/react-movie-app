@@ -23,6 +23,16 @@ header {
     color: #fff;
 }
 
+form {
+    background-color: #fff;
+    height: 70px;
+}
+
+.form-content {
+    padding: 10px;
+    text-align: center;
+}
+
 .search {
     background-color: transparent;
     border: 2px solid var(--primary-color);
@@ -30,6 +40,27 @@ header {
     font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
+    color: #fff;
+    margin-right: 20px;
+}
+
+select {
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 0.5rem;
+    margin-right: 20px;
+}
+
+select::content {
+    color: #7378c5;
+}
+
+.btn {
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    margin-right: 20px;
+    background-color: var(--primary-color);
     color: #fff;
 }
 
@@ -43,8 +74,8 @@ header {
 }
 
 main {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -109,4 +140,17 @@ main {
 
 .movie:hover .overview {
     transform: translateY(0);
+}
+
+@media (max-width: 500px) {
+    form {
+        height: 100px;
+    }
+
+    .search {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.5rem;
+        color: #fff;
+        margin-bottom: 5px;
+    }
 }
