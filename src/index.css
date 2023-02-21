@@ -138,6 +138,10 @@ main {
     transition: transform 0.3s ease-in;
 }
 
+.overview p {
+    font-size: small;
+}
+
 .movie:hover .overview {
     transform: translateY(0);
 }

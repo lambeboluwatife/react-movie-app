@@ -9,21 +9,17 @@ const Movie = ({ movie }) => {
         return "red";
         }
     }
-
-    // function getGenres(genres) {
-    //     const g = genres.map((genre) => genre).join(", ");
-    //     return g;
-    //   }
   return (
     <div className="movie">
         <img src={IMG_PATH + movie.poster_path} alt={movie.title} />
         <div className="movie-info">
             <h3>{movie.title || movie.name}</h3>
-            <span className={getClassByRate(movie.vote_average)}>{movie.vote_average}</span>            <div className="overview">
+            <span className={getClassByRate(movie.vote_average)}>{movie.vote_average}</span>      
+            <div className="overview">
                 <h3>Overview</h3>
-                {movie.overview}
+                <p>{movie.overview}</p>
+                <h6>Genre: {movie.genre_names.join(', ')}</h6>
                 <h6>Released On: {movie.release_date || movie.first_air_date}</h6>
-                <h6>Type: {movie.media_type}</h6>
             </div>
         </div>
     </div>
